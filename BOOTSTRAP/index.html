@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="MyPortFolio.css">
+    <link rel="stylesheet" href="MyPortFolio2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Dl7scIVS7wSk_T28D",
+      });
+   })();
+</script>
+</head>
+<body>
+   <div id="header">
+        <div class="container">
+            <nav>
+                <p id="pp">YOUSAF.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills1">Skill</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-exit' onclick="closemenu()"></i>
+                </ul>
+                 <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Yousaf Shibin</span></h1>
+                <p class="pt">I'm a Front End Developer</p>
+            </div>
+            <img src="ysf1.jpg" style="width: 300px; height: 350px;" id="img3">
+        </div>   
+    </div>
+    <!-- -----------------about-------------- -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ysf4.jpg" class="yyy">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-indent: 30px;">I hold a Bachelor's degree in Computer Applications (BCA), where I graduated with strong academic performance and a passion for web development. After my studies, I completed an internship at Bridgeon Solutions, a reputed IT company based in Calicut.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
+                        <p class="tab-links" onclick="opentab('experience')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                    </div>    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Devoloping</span><br>Website Development</li>
+                            <li><span>Testing</span><br>Website Testing</li>
+                            <li><span>Analysing</span><br>Website Analysing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-21</span><br>BCA-AI Coimbatore</li>
+                            <li><span>2021-24</span><br>Under Graduation</li>
+                            <li><span>2024-25</span><br>Intern</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Data Entry</li>
+                            <li><span>2024</span><br>Biller</li>
+                            <li><span>2025</span><br>Worker</li>
+                        </ul>
+                    </div>
+                    <div id="dld">
+                    <a href="mycv.pdf" download id="p1">Download CV</a>
+                    <img src="dwnld.png" style="width: 35px;height: 25px;">
+                    </div> 
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------skill-------------- -->
+    <div id="skills1">
+        <div class="container2"></div>
+            <h1 class="sub-title">My Skills</h1>
+             <div class="skill-list">
+                <div>
+                    <i class='bx bxl-html5'></i>
+                    <h2>HTML</h2>
+                    <p>95%</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxl-css3' ></i>
+                    <h2>CSS</h2>
+                    <p>95%</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxl-javascript' ></i>
+                    <h2>JavaScript</h2>
+                    <p>95%</p>
+                    <a href="">Learn more</a>
+                </div>
+              </div>
+             
+             
+    </div>
+    <!-- -----------------projects-------------- -->
+     <div id="portfolio">
+        <div class="container3">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="w3s.jpg" alt="img">
+                    <div class="layer">
+                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <P>This is a realistic navigation bar of W3 School document</P>
+                        <h3>W3S NAVBAR</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="easytrip.jpg" alt="img">
+                    <div class="layer">
+                        <a href="#"><i class='bx bx-link' ></i></a>
+                        <P>This is an attractive front page of a travel site</P>                     
+                        <h3>EaseMyTrip</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bank.jpg" alt="img">
+                    <div class="layer">
+                        <a href="#"><i class='bx bx-link' ></i></a>                       
+                        <P>Deposit and Withdrawal and Balance</P>
+                        <h3>Balance Check</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- -------------contact----------- -->
+   <div id="contact">
+     <div class="container1">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bx-send' ></i>yousafmpshibin@gmail.com</p>
+                <p><i class='bx bx-phone' ></i>7902704938</p>
+                <div class="social-icons">
+                    <a href="http://instagram.com/accounts/login/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" id="nme" placeholder="Your Name" required>
+                    <input type="email" name="email" id="mail" placeholder="Your emil" required>
+                    <textarea name="message" rows="6" id="msg" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2" onclick="sendEmail()">Submit</button>
+                </form>
+            </div>
+        </div>
+     </div>
+     <div class="copyright">
+        <p>Copyright @ Yousaf. <i class='bx bx-laptop' ></i> Made By Yousaf</p>
+     </div>
+     
+   </div>
+       
+
+    <!-- Bootstrap JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<script src="MyPortFolio.js"></script>
+</body>
+</html>

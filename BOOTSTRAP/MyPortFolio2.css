@@ -1,0 +1,64 @@
+
+nav .bx{
+    display: none;
+}
+/* -----------------------css for small screen------------------ */
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 20%;
+    }
+    .header-text h1{
+        font-size: 30px;
+        display: inline-block;
+
+    }
+    .header-text p{
+        font-size: 16px;
+        /* margin-right: 300px !important; */
+    }
+    #img3{
+        margin-right: -300px !important;
+    }
+    nav .bx{
+        display: block;
+    }
+    nav ul{
+        background: #ff004f;
+        position:fixed;
+        top:0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin:15px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top:25px;
+        cursor: pointer;
+        left: 25px;
+    }
+    .bx-menu{
+    margin-left:370px; 
+    margin-top: -240%;
+   
+    }
+    .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .about-col-1{
+        flex-basis: 10%;
+    }
+    .about-col-1 img{
+        width: 50%;
+        border-radius: 15px;
+    }
+}
